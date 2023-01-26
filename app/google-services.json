@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1077145257693",
+    "project_id": "unifier-628b8",
+    "storage_bucket": "unifier-628b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077145257693:android:a393707b6ec77c6b04fd34",
+        "android_client_info": {
+          "package_name": "com.example.unifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077145257693-lt6hivqb3a76o3bk9uh27oe2f2kco85r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPtbtLcOEGUb7WLZIvRXjVtmkP1TOPYMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077145257693-lt6hivqb3a76o3bk9uh27oe2f2kco85r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

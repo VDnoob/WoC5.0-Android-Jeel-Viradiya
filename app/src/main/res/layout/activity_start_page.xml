@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartPageActivity">
+
+    <TextView
+        android:id="@+id/unifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/prata"
+        android:text="U n i f i e r"
+        android:textAlignment="center"
+        android:textColor="#455cde"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unifier"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/email"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+        android:minHeight="48dp"
+        android:background="@drawable/custom_input"
+        android:textColorHint="@color/lighter_gray"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEmail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+        android:background="@drawable/custom_input"
+        android:textColorHint="@color/lighter_gray"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Login" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_layout"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O R"
+            android:textSize="16sp"
+            android:id="@+id/txtOr"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="5dp"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_toStartOf="@id/txtOr"
+            android:layout_centerVertical="true"
+            android:background="#737171"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_toEndOf="@id/txtOr"
+            android:layout_centerVertical="true"
+            android:background="#737171"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSignUpWith"
+        android:layout_below="@id/rel_layout"
+        android:layout_marginTop="15dp"
+        android:text="Sign up with"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout"
+        android:layout_below="@id/txtSignUpWith"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@mipmap/ic_google"
+            android:id="@+id/iconGoogle"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_facebook"
+            android:id="@+id/iconFacebook"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/parent" />
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="15dp"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/txtNoAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtNoAccount"
+            android:background="@android:color/transparent"
+            android:text="@string/sign_up_txt"
+            android:textColor="#3C0FFF"
+
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

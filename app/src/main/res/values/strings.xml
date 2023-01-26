@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Unifier</string>
+    <string name="sign_up_txt"><u>Sign Up</u></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="facebook_app_id">987769972200153</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Unifier" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#4285F4</item>
+        <item name="colorPrimaryVariant">#000d3d</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="contrast">@color/black</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

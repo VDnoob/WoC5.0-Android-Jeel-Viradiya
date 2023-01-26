@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/unifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/prata"
+        android:text="U n i f i e r"
+        android:textAlignment="center"
+        android:textColor="#455cde"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unifier"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="UserName"
+        android:minHeight="48dp"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="10dp"
+        android:background="@drawable/custom_input"
+        android:paddingHorizontal="10dp"
+        android:textColorHint="@color/lighter_gray"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editUserName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Name"
+        android:minHeight="48dp"
+        android:drawableStart="@drawable/ic_name"
+        android:drawablePadding="10dp"
+        android:background="@drawable/custom_input"
+        android:paddingHorizontal="10dp"
+        android:textColorHint="@color/lighter_gray"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Email"
+        android:minHeight="48dp"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:background="@drawable/custom_input"
+        android:paddingHorizontal="10dp"
+        android:textColorHint="@color/lighter_gray"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEmail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Password (4-16)"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:background="@drawable/custom_input"
+        android:paddingHorizontal="10dp"
+        android:textColorHint="@color/lighter_gray"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Register" />
+
+
+
+
+</RelativeLayout>
